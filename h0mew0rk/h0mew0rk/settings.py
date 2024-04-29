@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'les1app',
+    'les2app',
 ]
 
 MIDDLEWARE = [
@@ -151,7 +152,12 @@ LOGGING = {
             'handlers': ['console', 'file'],
             'level': 'INFO',
         },
-        'firstapp': {
+        'les1app': {
+            'handlers': ['console', 'file'],
+            'level': 'DEBUG',
+            'propagate': True,
+        },
+        'les2app': {
             'handlers': ['console', 'file'],
             'level': 'DEBUG',
             'propagate': True,
