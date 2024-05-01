@@ -3,4 +3,4 @@ __pycache__/
 *.pot
 *.pyc
 *.sqlite3
-.vscode/*
+media/

@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'les1app',
     'les2app',
     'les3app',
+    'les4app',
 ]
 
 MIDDLEWARE = [
@@ -168,5 +169,13 @@ LOGGING = {
             'level': 'DEBUG',
             'propagate': True,
         },
+        'les4app': {
+            'handlers': ['console', 'file'],
+            'level': 'DEBUG',
+            'propagate': True,
+        },        
     },
 }
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
