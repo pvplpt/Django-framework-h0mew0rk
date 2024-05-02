@@ -21,13 +21,13 @@ def product_form(request):
             description = form.cleaned_data['description']
             price = form.cleaned_data['price']
             count = form.cleaned_data['count']
-            logger.info(f'Получили {form.cleaned_data=}.')
-            product = Product(name =name, description=description, price=price,count=count)
+            logger.info(f'Получили name={name}, description={description}, price={price}, count={count}.')
+            product = Product(name=name, description=description, price=price,count=count)
             product.save()
             message = 'Товар сохранён без фото'
             if form1.is_valid():
                 image = form1.cleaned_data['image']
-                logger.info(f'Получили {form1.cleaned_data=}.')
+                logger.info(f'Получили image={image}.')
                 product.image = image
                 product.save()
                 message = 'Товар сохранён c фото'
