@@ -8,7 +8,7 @@ def index(request):
     <h1>Мое первое приложение на Django!</h1>
     <h3>Для запуска выполнил следующее:</h3>
     <p>Создал виртуальное окружение: <b>python3 -m venv ~/.venvDjango</b></p>
-    <p>Активировал виртуальное окружение: <b>source ~/.venvDjango</b></p>
+    <p>Активировал виртуальное окружение: <b>source ~/.venvDjango/bin/activate</b></p>
     <p>Установил Django:<b> pip install django</b></p>
     <p>В папке <b>Django-framework-h0mew0rk</b> создал проект: <b>django-admin startproject h0mew0rk</b></p>
     <p>Добавил ip в файл settings.py: <b>ALLOWED_HOSTS = ['127.0.0.1', '192.168.1.5',]</b></p>
