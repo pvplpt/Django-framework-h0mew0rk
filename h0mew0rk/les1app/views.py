@@ -5,7 +5,7 @@ logger = logging.getLogger(__name__)
 
 def index(request):
     text = """
-    <h1>Мое первое приложение на Django!</h1>
+    <h1><a href="about/">Мое</a> первое приложение на Django!</h1>
     <h3>Для запуска выполнил следующее:</h3>
     <p>Создал виртуальное окружение: <b>python3 -m venv ~/.venvDjango</b></p>
     <p>Активировал виртуальное окружение: <b>source ~/.venvDjango/bin/activate</b></p>

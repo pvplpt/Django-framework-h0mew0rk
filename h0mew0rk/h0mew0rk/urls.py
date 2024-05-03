@@ -24,5 +24,7 @@ urlpatterns = [
     path('', include('les1app.urls')),
     path('les3/', include('les3app.urls')),
     path('les4/', include('les4app.urls')),
+    path('les5/', include('les5app.urls')),
+    path('les6/', include('les6app.urls')),
 ]
 urlpatterns += static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
